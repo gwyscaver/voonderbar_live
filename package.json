@@ -1,0 +1,28 @@
+{
+  "name": "project2greenhaus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gwyscaver/project2greenhaus.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gwyscaver/project2greenhaus/issues"
+  },
+  "homepage": "https://github.com/gwyscaver/project2greenhaus#readme",
+  "dependencies": {
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "express-session": "^1.17.0",
+    "mysql2": "^1.7.0",
+    "sequelize": "^5.19.6"
+  }
+}
