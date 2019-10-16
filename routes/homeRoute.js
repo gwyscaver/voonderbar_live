@@ -9,18 +9,27 @@ module.exports = function(app) {
     else {
 
     db.Cannabis.findAll({where:{color:"sativa"}}).then(function(sativaStrains) {
+
       db.Cannabis.findAll({where:{color:"indica"}}).then(function(indicaStrains){
+
         db.Cannabis.findAll({where:{color:"hybrid"}}).then(function(hybridStrains){
+
+        db.Wine.findAll({where:{color:"red"}}).then(function(redWine){
+
+        db.Wine.findAll({where:{color:"white"}}).then(function(whiteWine){
             var hbsObject = { 
               indica:indicaStrains,
               sativa:sativaStrains,
               hybrid:hybridStrains,
+              red: redWine,
+              white: whiteWine,
               name:req.session.user.name
             };
 
-            console.log(hbsObject)
-            res.render("securepage", hbsObject);
             
+             res.render("securepage", hbsObject);
+          });
+        })
           });
         })
       }) 
