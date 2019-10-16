@@ -554,3 +554,239 @@ db.Cannabis.create({
     percentOfTHC: 36,
     percentOfCBD: 43
 })
+
+//---------------------BEGIN WINE SEEDS--------------------------------//
+//---------------------WHITE WINE-------------------------------------//
+
+db.Wine.create({
+    name:"Pacific Rim Riesling Columbia Valley 2009",
+    color: "White",
+    varietal: "Riesling",
+    flavor: "Orange Blossom, Peaches, Honeysuckle",
+    pricePerBottle: 10,
+    alcoholPercent: 12
+
+})
+
+//2
+db.Wine.create({
+    name: "àMaurice Cellars Sparrow Estate Viognier Walla Walla Valley 2009",
+    color: "White",
+    varietal: "Viognier",
+    flavor: "Floral, Stone Fruit, Oak",
+    pricePerBottle: 33,
+    alcoholPercent: 15
+
+})
+
+//3
+db.Wine.create({
+    name: "Buty Winery Sémillon Sauvignon and Muscadelle Columbia Valley 2008",
+    color: "White",
+    varietal: "Sémillon Sauvignon",
+    flavor: "Straw, Spice, Lemon",
+    pricePerBottle: 25,
+    alcoholPercent: 14
+
+})
+
+//4
+db.Wine.create({
+    name:"Forgeron Cellars Chardonnay Columbia Valley 2007",
+    color: "White",
+    varietal:"Chardonnay" ,
+    flavor: "Light Spice, Mineral, Grass",
+    pricePerBottle: 25,
+    alcoholPercent: 14
+
+})
+
+//5
+db.Wine.create({
+    name:"Woodward Canyon Chardonnay Washington State 2008",
+    color: "White",
+    varietal:"Chardonnay" ,
+    flavor: "Spice, Lemon, Mineral",
+    pricePerBottle: 44,
+    alcoholPercent: 14
+
+})
+
+//6
+
+db.Wine.create({
+    name:"Syncline Wine Cellars Roussanne Horse Heaven Hills 2008",
+    color: "White",
+    varietal: "Roussanne",
+    flavor: "Candied Fruit, Melon, Zest",
+    pricePerBottle: 22,
+    alcoholPercent: 14
+
+})
+
+//7
+
+db.Wine.create({
+    name:"Long Shadows Poet’s Leap Riesling Columbia Valley 2008",
+    color: "White",
+    varietal: "Riesling",
+    flavor: "Lemon, Diesel, Mineral" ,
+    pricePerBottle: 20,
+    alcoholPercent: 13
+
+})
+
+//8
+
+db.Wine.create({
+    name:"William Church Winery Viognier Columbia Valley 2009",
+    color: "White",
+    varietal: "Viognier",
+    flavor: "Peaches, Melon, Floral",
+    pricePerBottle: 21,
+    alcoholPercent: 14
+
+})
+
+//9
+
+db.Wine.create({
+    name:"DeLille Cellars Chaleur Estate Blanc Columbia Valley 2008",
+    color: "White",
+    varietal: "Chaleur Blanc",
+    flavor: "Gooseberry, Straw, Toast",
+    pricePerBottle: 34,
+    alcoholPercent: 14
+
+})
+
+//10
+
+db.Wine.create({
+    name:"Chateau Ste. Michelle and Dr. Loosen Eroica Riesling Columbia Valley 2008",
+    color: "White",
+    varietal: "Riesling",
+    flavor: "Lime, Mineral, Diesel",
+    pricePerBottle: 24,
+    alcoholPercent: 11
+
+})
+
+//-------------------------------END WHITE WINE---------------------//
+//-------------------------------BEGIN RED WINE---------------------//
+
+db.Wine.create({
+    name:"Quilceda Creek Cabernet Sauvignon Columbia Valley 2007",
+    color: "Red",
+    varietal: "Cabernet Sauvignon",
+    flavor: "Black Cherry, Blackberry, Chocolate",
+    pricePerBottle: 125,
+    alcoholPercent: 15
+
+})
+
+//2
+db.Wine.create({
+    name:"Cayuse Vineyards God Only Knows Grenache 2006",
+    color: "Red",
+    varietal: "Grenache",
+    flavor: "Black Olives, Earth, Savory",
+    pricePerBottle: 65,
+    alcoholPercent: 15
+
+})
+
+//3
+db.Wine.create({
+    name:"Woodward Canyon Cabernet Sauvignon Old Vines 2007",
+    color: "Red",
+    varietal: "Cabernet Sauvignon",
+    flavor: "Black Fruit, Oak",
+    pricePerBottle: 79,
+    alcoholPercent: 15
+
+})
+
+//4
+db.Wine.create({
+    name:"Waters Winery Syrah Forgotten Hills Vineyard Walla Walla Valley 2007",
+    color: "Red",
+    varietal: "Syrah",
+    flavor: "Earth, Black Olives, Berries",
+    pricePerBottle: 40,
+    alcoholPercent: 14
+
+})
+
+//5
+db.Wine.create({
+    name:"Owen Roe Chapel Block Syrah Red Willow Vineyard Yakima Valley 2008",
+    color: "Red",
+    varietal: "Syrah",
+    flavor: "Fruit, Acid, Black Currant",
+    pricePerBottle: 45,
+    alcoholPercent: 15
+
+})
+
+//6
+
+db.Wine.create({
+    name:"Buty Winery Rediviva of the Stones Walla Walla Valley 2007",
+    color: "Red",
+    varietal: "Cabernet Sauvignon",
+    flavor: "Earth, Seaweed, Olive",
+    pricePerBottle: 55,
+    alcoholPercent: 14
+
+})
+
+//7
+
+db.Wine.create({
+    name:"Rasa Vineyards Principia Reserve Syrah Walla Walla Valley 2007",
+    color: "Red",
+    varietal: "Syrah",
+    flavor: "Lemon Zest, Blackberry, Black Fruit",
+    pricePerBottle: 85,
+    alcoholPercent: 15
+
+})
+
+//8
+
+db.Wine.create({
+    name:"Grand Reve Vintners Collaboration Series II Red Wine Ciel du Cheval Vineyard Red Mountain 2007",
+    color: "Red",
+    varietal: "Red Blend",
+    flavor: "Earth, Mineral, Red Fruit",
+    pricePerBottle: 45,
+    alcoholPercent: 15
+
+})
+
+//9
+
+db.Wine.create({
+    name:"Gramercy Cellars Lagniappe Syrah Columbia Valley 2007",
+    color: "Red",
+    varietal: "Syrah",
+    flavor: "Floral, Game, Earth",
+    pricePerBottle: 40,
+    alcoholPercent: 14
+
+})
+
+//10
+
+db.Wine.create({
+    name:"Abeja Cabernet Sauvignon Columbia Valley 2007",
+    color: "Red",
+    varietal: "Cabernet Sauvignon",
+    flavor: "Toast, Dark Chocolate, Spice",
+    pricePerBottle: 42,
+    alcoholPercent: 15
+
+})
+
+//-------------------------------END RED WINE---------------------//
