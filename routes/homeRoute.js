@@ -25,6 +25,7 @@ module.exports = function(app) {
               white: whiteWine,
               name:req.session.user.name
             };
+            
 
             
              res.render("securepage", hbsObject);
