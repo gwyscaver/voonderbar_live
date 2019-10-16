@@ -24,8 +24,8 @@
                                             <ul>
                                                 <!-- <li><a href="categories.html">Categories</a></li> -->
                                                 <!-- <li><a href="products.html">Product</a></li>  -->
-                                                <li><a href="#cart">Cart</a></li>
-                                                <li><a href="#checkout">Check-out</a></li>
+                                                <li><a href="/cart/checkout">Cart</a></li>
+                                                <li><a href="/cart/checkout">Check-out</a></li>
                                                 <!-- <li><a href="contact.html">Contact</a></li> -->
                                             </ul>
                                         </li>
@@ -63,7 +63,7 @@
                                 </nav>
                                 <div class="header_extra ml-auto">
                                     <div class="shopping_cart">
-                                        <a href="cart.html">
+                                        <a href="/cart/checkout">
                                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
                                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                                 viewBox="0 0 489 489" style="enable-background:new 0 0 489 489;"
@@ -321,7 +321,7 @@
 
                             <p> {{ pricePerGram }}</p>
 
-                            <button data-productid={{id}}>add to cart</button>
+                            <button data-productid={{id}} class="cannabis">add to cart</button>
                         </div>
                     </div>
                     {{/each}}
@@ -349,7 +349,7 @@
 
                             <p> {{ pricePerGram }}</p>
 
-                            <button data-productid={{id}}>add to cart</button>
+                            <button data-productid={{id}} class="cannabis">add to cart</button>
                         </div>
                     </div>
                     {{/each}}
@@ -377,7 +377,7 @@
 
                             <p> {{ pricePerGram }}</p>
 
-                            <button data-productid={{id}}>add to cart</button>
+                            <button data-productid={{id}} class="cannabis">add to cart</button>
                         </div>
                     </div>
                     {{/each}}
@@ -405,7 +405,7 @@
 
                             <p> {{ pricePerBottle }}</p>
 
-                            <button data-productid={{id}}>add to cart</button>
+                            <button class="wine" data-productid={{id}}>add to cart</button>
                         </div>
                     </div>
                     {{/each}}
@@ -433,7 +433,7 @@
 
                             <p> {{ pricePerBottle }}</p>
 
-                            <button data-productid={{id}}>add to cart</button>
+                            <button class="wine" data-productid={{id}}>add to cart</button>
                         </div>
                     </div>
                     {{/each}}

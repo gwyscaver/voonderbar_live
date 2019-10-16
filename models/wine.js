@@ -9,6 +9,14 @@ module.exports = function(sequelize, DataTypes) {
         
         }, {
             timestamps: false
+
         })
+
+        Wine.associate = function(models) {
+            // add associations here
+            // ex:User.hasMany(models.BlogPost);
+            Wine.belongsToMany(models.Cart, {through: "CartWine"})
+            
+        };
         return Wine
     }
