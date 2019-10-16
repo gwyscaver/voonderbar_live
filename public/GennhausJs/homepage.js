@@ -11,6 +11,8 @@ var productId = $(this).attr("data-productid");
         console.log(data, "added")
     })
 
+    alert("product added to cart!")
+
 });
 
 $(".wine").click(function(){
@@ -24,6 +26,8 @@ $(".wine").click(function(){
     }).then(function(data){
         console.log(data, "added")
     })
+
+    alert("product added to cart!")
 
 });
 })

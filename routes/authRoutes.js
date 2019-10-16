@@ -43,6 +43,7 @@ app.post('/login',function(req,res){
         else {
             req.session.user= false;
             req.session.error = 'auth failed bro'
+            red.redirect('/');
         }
         res.redirect('/main');
     })
