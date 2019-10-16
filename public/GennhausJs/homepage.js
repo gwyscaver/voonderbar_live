@@ -1,14 +1,32 @@
 $(document).ready(function() {
 
-$("button").click(function(){
- productId = $(this).attr("data-productid");
+$(".cannabis").click(function(){
+var productId = $(this).attr("data-productid");
  console.log("ID", productId)
 
  $.ajax({
-    url: '/cart/' + productId,
+    url: '/cart/' + "cannabis/" + productId,
     type: 'PUT'
     }).then(function(data){
         console.log(data, "added")
     })
+
+});
+
+$(".wine").click(function(){
+
+ var wineproductId = $(this).attr("data-productid");
+ console.log("ID", wineproductId)
+
+ $.ajax({
+    url: '/cart/' + "wine/" + wineproductId,
+    type: 'PUT'
+    }).then(function(data){
+        console.log(data, "added")
+    })
+
 });
 })
+
+
+
