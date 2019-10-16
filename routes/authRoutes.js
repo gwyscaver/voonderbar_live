@@ -24,11 +24,11 @@ app.post('/signup',function(req,res){
         password:req.body.password
     }).then(function(newUser){
         console.log(newUser)
-        res.json(newUser);
+        res.render('securepage');
     })
 })
 //login page
-app.get('/login',function(req,res){
+app.get('/',function(req,res){
     res.render('login')
 })
 
