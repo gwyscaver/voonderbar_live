@@ -1222,7 +1222,7 @@ section
 }
 .icon_box_row
 {
-
+	align-items: center;
 }
 .icon_box
 {

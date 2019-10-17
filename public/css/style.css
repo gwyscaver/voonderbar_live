@@ -57,8 +57,10 @@ section#contact {
   }
   
   .footer {
-    padding: 25px 0;
+    margin-top: inherit;
     text-align: center;
+    position: inherit;
+    padding-top: 10%;
   }
   
   .footer span.copyright {
