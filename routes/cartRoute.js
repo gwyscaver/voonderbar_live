@@ -15,6 +15,20 @@ cartRouter.route("/checkout")
     })
 })
 
+.delete(function(req, res){
+    models.Cart.destroy({
+        where: {
+
+            UserId: req.session.user.id,
+            status:true
+
+    }
+}).then(function(data){
+    res.json(data)
+})
+});
+
+
 cartRouter.route("/")
     .post(function(req, res){
         console.log(req.session)

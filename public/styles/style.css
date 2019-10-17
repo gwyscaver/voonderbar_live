@@ -1,0 +1,177 @@
+a, a:hover {
+  color: inherit;
+}
+
+.age-button {
+  font-family: 'Poppins', sans-serif;
+  background-color: #966B3A;
+  border: none;
+  font-size: 16pt;
+  color: #fff;
+  display: inline-block;
+  width: 150px;
+  padding: 10px;
+  margin: 5px 10px;
+}
+
+.age-title {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+  margin-top: .5em;
+}
+
+.age-title, .age-main-text {
+  display: block;
+  margin-bottom: 1em;
+}
+
+.age-verification-main {
+  font-family: 'Poppins', sans-serif;
+  background-color: #2B2D35;
+  color: white;
+  font-size: 13pt;
+  text-align: center;
+  padding: 25px;
+  position: relative;
+  top: 20px;
+  width: 1000px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.logo a {
+  font-size: 30px;
+  font-weight: 700;
+  color: #966B3A;
+}
+
+#logoLogin {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3.5em;
+  color: #966B3A;
+}
+
+.modal-full {
+  min-width: 100%;
+  margin: 0;
+}
+
+.modal-full .modal-content {
+  min-height: 100vh;
+}
+
+section#contact {
+    background-color: #212529;
+    /* background-image: url("../assets/contact.jpg"); */
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  section#contact .section-heading {
+    color: #fff;
+  }
+  
+  section#contact .form-group {
+    margin-bottom: 25px;
+  }
+  
+  section#contact .form-group input,
+  section#contact .form-group textarea {
+    padding: 20px;
+  }
+  
+  section#contact .form-group input.form-control {
+    height: auto;
+  }
+  
+  section#contact .form-group textarea.form-control {
+    height: 248px;
+  }
+  
+  section#contact .form-control:focus {
+    border-color: #fed136;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  
+  section#contact ::-webkit-input-placeholder {
+    font-weight: 700;
+    color: #ced4da;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  section#contact :-moz-placeholder {
+    font-weight: 700;
+    color: #ced4da;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  section#contact ::-moz-placeholder {
+    font-weight: 700;
+    color: #ced4da;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  section#contact :-ms-input-placeholder {
+    font-weight: 700;
+    color: #ced4da;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+.strain, .wine {
+  border: 4px solid whitesmoke;
+  border-radius: 8px;
+  padding: 16px;
+  height: 400px;
+}
+
+#strain__pricerow{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: absolute;
+  bottom: 0;
+}
+
+
+  .footer {
+    padding: 25px 0;
+    text-align: center;
+  }
+  
+  .footer span.copyright {
+    font-size: 90%;
+    line-height: 40px;
+    text-transform: none;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .footer ul.quicklinks {
+    font-size: 90%;
+    line-height: 40px;
+    margin-bottom: 0;
+    text-transform: none;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  ul.social-buttons {
+    margin-bottom: 0;
+  }
+  
+  ul.social-buttons li a {
+    font-size: 20px;
+    line-height: 50px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    color: white;
+    border-radius: 100%;
+    outline: none;
+    background-color: #212529;
+  }
+  
+  ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
+    background-color: #fed136;
+  }
+  

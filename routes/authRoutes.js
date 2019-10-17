@@ -24,11 +24,11 @@ app.post('/signup',function(req,res){
         password:req.body.password
     }).then(function(newUser){
         console.log(newUser)
-        res.render('securepage');
+        res.redirect('/main');
     })
 })
 //login page
-app.get('/',function(req,res){
+app.get('/login',function(req,res){
     res.render('login')
 })
 
@@ -43,6 +43,7 @@ app.post('/login',function(req,res){
         else {
             req.session.user= false;
             req.session.error = 'auth failed bro'
+            res.redirect('/');
         }
         res.redirect('/main');
     })

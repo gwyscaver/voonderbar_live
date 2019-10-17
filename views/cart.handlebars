@@ -74,7 +74,7 @@
 													c0,7.5,6,13.5,13.5,13.5s13.5-6,13.5-13.5v-41h45.2l26.9,302.3C412.8,445.2,392.1,462,366.8,462z" />
                                                 </g>
                                             </svg>
-                                            <div>Cart <span>(0)</span></div>
+                                            <div>Cart (<span id="cartnum">0</span>)</div>
                                         </a>
                                     </div>
                                     <div class="search">
@@ -228,6 +228,7 @@
 
 					<!-- Cart Item -->
 					<h2>Weeds</h2>
+					<div id="weedsContainer">
 					  {{#each Cannabis}}
 					  <div class="col-lg-4">
                         <br>
@@ -236,9 +237,10 @@
 					  </div>
 					
 					 {{/each}}
+					 </div>
 
 					  <h2>Wines</h2>
-
+					<div id="winesContainer">
 					  {{#each Wines}}
 					 <div class="col-lg-4">
                         <br>
@@ -246,6 +248,7 @@
 					 </div>
 
 					 {{/each}}
+					 </div>
 
 				</div>
 				{{!-- <div class="col-lg-2">
@@ -273,7 +276,7 @@
 					<div class="cart_buttons d-flex flex-lg-row flex-column align-items-start justify-content-start">
 						<div class="button continue_shopping_button"><a href="#">Continue shopping</a></div>
 						<div class="cart_buttons_right ml-lg-auto">
-							<div class="button clear_cart_button"><a href="#">Clear cart</a></div>
+							<div id="clearButton" class="button clear_cart_button"><a href="#">Clear cart</a></div>
 							<div class="button update_cart_button"><a href="#">Update cart</a></div>
 						</div>
 					</div>

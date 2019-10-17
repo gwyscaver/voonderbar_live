@@ -4,7 +4,7 @@ module.exports = function(app) {
   // Find all Authors and return them to the user with res.json
   app.get("/main", function(req, res) {
     if(!req.session.user){
-      res.redirect('/')
+      res.redirect('/login')
     }
     else {
 
@@ -36,7 +36,11 @@ module.exports = function(app) {
       }) 
       // db.Wine.findAll()   
 
-  }
+      
+    }
   });
-
+  
+  app.get("/", function (req, res) {
+    res.render("gateway")
+  })
 }
