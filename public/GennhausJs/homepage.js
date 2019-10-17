@@ -1,4 +1,12 @@
 $(document).ready(function() {
+var cartNum = $("#cartnum")
+
+var weedCount = $("#weedsContainer").children().length;
+var wineCount = $("#winesContainer").children().length;
+
+var total = weedCount + wineCount;
+console.log(total);
+cartNum.text(total);
 
 $(".cannabis").click(function(){
 var productId = $(this).attr("data-productid");
@@ -9,28 +17,53 @@ var productId = $(this).attr("data-productid");
     type: 'PUT'
     }).then(function(data){
         console.log(data, "added")
+        alert("product added to cart!")
+        total++
+        cartNum.text(total);
     })
-
-    alert("product added to cart!")
 
 });
 
-$(".wine").click(function(){
-
- var wineproductId = $(this).attr("data-productid");
- console.log("ID", wineproductId)
-
+$(".cartbtn").click(function(){
+    
+    var wineproductId = $(this).attr("data-productid");
+    console.log("ID", wineproductId)
+    
+        
  $.ajax({
     url: '/cart/' + "wine/" + wineproductId,
     type: 'PUT'
     }).then(function(data){
         console.log(data, "added")
+        alert("product added to cart!")
+        console.log(data)
     })
-
-    alert("product added to cart!")
+    total++
+    cartNum.text(total);
+    
 
 });
+
+$("#clearButton").click(function(){
+
+    $.ajax({
+        url: '/cart/checkout',
+        type: 'DELETE'
+        }).then(function(data){
+
+            console.log(data, "added")
+            $("#weedsContainer").empty();
+            $("#winesContainer").empty();
+            total = 0;
+            cartNum.text(total);
+
+
+        })
+
 })
+
+})
+
 
 
 
