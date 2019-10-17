@@ -1,6 +1,12 @@
+
+
+
+
 <link rel="stylesheet" type="text/css" href="/styles/main_styles.css">
 <link rel="stylesheet" type="text/css" href="/styles/responsive.css">
 <link rel="stylesheet" type="text/css" href="/styles/style.css">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 </head>
 
 <body>
@@ -38,7 +44,7 @@
                                         <li class="hassubs">
                                             <a class="nav-link js-scroll-trigger" href="#products">Products</a>
                                             <ul>
-                                                <li><a href="#sativa">Sativa</a></li>
+                                                <li><a class="js-scroll-trigger" href="#sativa">Sativa</a></li>
                                                 <li><a href="#indica">Indica</a></li>
                                                 <li><a href="#hybrid">Hybrids</a></li>
                                                 <li><a href="#white">White Wine</a></li>
@@ -253,8 +259,10 @@
                                     <div class="col">
                                         <div class="home_slider_content" data-animation-in="fadeIn"
                                             data-animation-out="animate-out fadeOut">
+
                                             <div class="home_slider_title">Become Inspired.</div>
                                             <div class="home_slider_subtitle">and enjoy the smaller things in life.</div>
+
                                             <div class="button button_light home_button"><a href="#">Shop Now</a></div>
                                         </div>
                                     </div>
@@ -316,9 +324,14 @@
 
                             <p> {{ percentOfTHC }}</p>
 
-                            <p> {{ pricePerGram }}</p>
-
-                            <button data-productid={{id}} class="cannabis">add to cart</button>
+                            <div id="strain__pricerow">
+                                <div id="pricerowleft">
+                                    <p> {{ pricePerGram }}</p>
+                                </div>
+                                <div id="pricerowrightt">   
+                                    <button class="cartbtn" data-productid={{id}}>add to cart</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     {{/each}}
@@ -344,9 +357,14 @@
 
                             <p> {{ percentOfTHC }}</p>
 
-                            <p> {{ pricePerGram }}</p>
-
-                            <button data-productid={{id}} class="cannabis">add to cart</button>
+                            <div id="strain__pricerow">
+                                <div id="pricerowleft">
+                                    <p> {{ pricePerGram }}</p>
+                                </div>
+                                <div id="pricerowrightt">   
+                                    <button class="cartbtn" data-productid={{id}}>add to cart</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     {{/each}}
@@ -372,9 +390,14 @@
 
                             <p> {{ percentOfTHC }}</p>
 
-                            <p> {{ pricePerGram }}</p>
-
-                            <button data-productid={{id}} class="cannabis">add to cart</button>
+                            <div id="strain__pricerow">
+                                <div id="pricerowleft">
+                                    <p> {{ pricePerGram }}</p>
+                                </div>
+                                <div id="pricerowrightt">   
+                                    <button class="cartbtn" data-productid={{id}}>add to cart</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     {{/each}}
@@ -400,9 +423,14 @@
 
                             <p> {{ alcoholPercent }}</p>
 
-                            <p> {{ pricePerBottle }}</p>
-
-                            <button class="cartbtn" data-productid={{id}}>add to cart</button>
+                            <div id="wine__pricerow">
+                                <div id="pricerowleft">
+                                    <p> {{ pricePerBottle }}</p>
+                                </div>
+                                <div id="pricerowrightt">   
+                                    <button class="cartbtn" data-productid={{id}}>add to cart</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     {{/each}}
@@ -428,9 +456,14 @@
 
                             <p> {{ alcoholPercent }}</p>
 
-                            <p> {{ pricePerBottle }}</p>
-
-                            <button class="cartbtn" data-productid={{id}}>add to cart</button>
+                           <div id="wine__pricerow">
+                                <div id="pricerowleft">
+                                    <p> {{ pricePerBottle }}</p>
+                                </div>
+                                <div id="pricerowrightt">   
+                                    <button class="cartbtn" data-productid={{id}}>add to cart</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     {{/each}}
@@ -681,7 +714,108 @@
 
                 <!---------------------CONTACT------------------------->
 
-                 <section class="page-section" id="contact">
+<!--Section: Contact v.2-->
+<section class="mb-4">
+
+    <!--Section heading-->
+    <h2 id="contact" class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+    <!--Section description-->
+    <p class="text-center mx-auto mb-5">Please do not hesitate to contact us directly. Our team will come back to you within
+        a matter of hours or days to help you, because we are either high or drunk.</p>
+
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Your name</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Your email</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control">
+                            <label for="subject" class="">Subject</label>
+                        </div>
+                    </div>
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message">Your message</label>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+
+            </form>
+
+            <div class="text-center text-md-left">
+                <a class="btn btn-dark" onclick="document.getElementById('contact-form').submit();">Send</a>
+            </div>
+            <div class="status"></div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+                <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                    <p>Seattle, WA, USA</p>
+                </li>
+
+                <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                    <p>+ 1 800 555 1212</p>
+                </li>
+
+                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                    <p>contact@voonderbar.com</p>
+                </li>
+            </ul>
+        </div>
+        <!--Grid column-->
+
+    </div>
+
+</section>
+<!--Section: Contact v.2-->
+
+
+
+
+
+                 {{!-- <section class="page-section" id="contact">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -728,10 +862,10 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> --}}
 
 
-                            <!-- Contact Info -->
+                            {{!-- <!-- Contact Info -->
                             <div class="col-lg-3 offset-xl-1 contact_col">
                                 <div class="contact_info">
                                     <div class="contact_info_section">
@@ -756,7 +890,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                         {{!-- </div> --}}
                         {{!-- <div class="row map_row">
                             <div class="col"> --}}
@@ -794,8 +928,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 							<ul>
 								{{!-- <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
 								<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li> --}}
-								<li><a href="https://www.facebook.com/beefyBois/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-								<li><a href="https://twitter.com/beefy_bois"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+								{{!-- <li><a href="https://www.facebook.com/beefyBois/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+								<li><a href="https://twitter.com/beefy_bois"><i class="fa fa-twitter" aria-hidden="true"></i></a></li> --}}
 							</ul>
 						</div>
 					</div>
@@ -804,3 +938,4 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 		</div>
 	</footer>
 </div>
+

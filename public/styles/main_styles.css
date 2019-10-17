@@ -122,13 +122,14 @@ h4{font-size: 18px;}
 h5{font-size: 14px;}
 h1, h2, h3, h4, h5, h6
 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
 	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	font-weight: bold;
 }
 h1::selection, 
-h2::selection, 
+h2::selection 
 h3::selection, 
 h4::selection, 
 h5::selection, 
@@ -145,6 +146,10 @@ section
 	display: block;
 	position: relative;
 	box-sizing: border-box;
+	padding-top: 50px;
+	margin-top: 0px;
+	margin-bottom: 15px;
+
 }
 .clear
 {
@@ -1212,13 +1217,13 @@ section
 9. Icon Boxes
 *********************************/
 
-.icon_boxes
+/* .icon_boxes
 {
 	width: 100%;
 	padding-top: 99px;
 	padding-bottom: 99px;
 	background: #FFFFFF;
-	z-index: 2;
+	z-index: 2; */
 }
 .icon_box_row
 {
