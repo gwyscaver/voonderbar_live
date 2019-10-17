@@ -44,7 +44,7 @@
                                         <li class="hassubs">
                                             <a class="nav-link js-scroll-trigger" href="#products">Products</a>
                                             <ul>
-                                                <li><a href="#sativa">Sativa</a></li>
+                                                <li><a class="js-scroll-trigger" href="#sativa">Sativa</a></li>
                                                 <li><a href="#indica">Indica</a></li>
                                                 <li><a href="#hybrid">Hybrids</a></li>
                                                 <li><a href="#white">White Wine</a></li>
@@ -324,9 +324,14 @@
 
                             <p> {{ percentOfTHC }}</p>
 
-                            <p> {{ pricePerGram }}</p>
-
-                            <button data-productid={{id}} class="cannabis">add to cart</button>
+                            <div id="strain__pricerow">
+                                <div id="pricerowleft">
+                                    <p> {{ pricePerGram }}</p>
+                                </div>
+                                <div id="pricerowrightt">   
+                                    <button class="cartbtn" data-productid={{id}}>add to cart</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     {{/each}}
@@ -352,9 +357,14 @@
 
                             <p> {{ percentOfTHC }}</p>
 
-                            <p> {{ pricePerGram }}</p>
-
-                            <button data-productid={{id}} class="cannabis">add to cart</button>
+                            <div id="strain__pricerow">
+                                <div id="pricerowleft">
+                                    <p> {{ pricePerGram }}</p>
+                                </div>
+                                <div id="pricerowrightt">   
+                                    <button class="cartbtn" data-productid={{id}}>add to cart</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     {{/each}}
@@ -380,9 +390,14 @@
 
                             <p> {{ percentOfTHC }}</p>
 
-                            <p> {{ pricePerGram }}</p>
-
-                            <button data-productid={{id}} class="cannabis">add to cart</button>
+                            <div id="strain__pricerow">
+                                <div id="pricerowleft">
+                                    <p> {{ pricePerGram }}</p>
+                                </div>
+                                <div id="pricerowrightt">   
+                                    <button class="cartbtn" data-productid={{id}}>add to cart</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     {{/each}}
@@ -408,9 +423,14 @@
 
                             <p> {{ alcoholPercent }}</p>
 
-                            <p> {{ pricePerBottle }}</p>
-
-                            <button class="cartbtn" data-productid={{id}}>add to cart</button>
+                            <div id="wine__pricerow">
+                                <div id="pricerowleft">
+                                    <p> {{ pricePerBottle }}</p>
+                                </div>
+                                <div id="pricerowrightt">   
+                                    <button class="cartbtn" data-productid={{id}}>add to cart</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     {{/each}}
@@ -436,9 +456,14 @@
 
                             <p> {{ alcoholPercent }}</p>
 
-                            <p> {{ pricePerBottle }}</p>
-
-                            <button class="cartbtn" data-productid={{id}}>add to cart</button>
+                           <div id="wine__pricerow">
+                                <div id="pricerowleft">
+                                    <p> {{ pricePerBottle }}</p>
+                                </div>
+                                <div id="pricerowrightt">   
+                                    <button class="cartbtn" data-productid={{id}}>add to cart</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     {{/each}}

@@ -283,7 +283,7 @@ db.Cannabis.create({
 db.Cannabis.create({
 
     strainName: "Laughing Buddja",
-    ccolor: "Sativa",
+    color: "Sativa",
     desc: "Laughing Buddha is an Amsterdam-bred, deceptively potent (THC levels reported at 18%), not-ideal-for-beginners, Sativa-Dominant hybrid blending of Thai and Jamaican strains.",
     flavor: "Fruit, Spicy, Peppery",
     pricePerGram: 6,
