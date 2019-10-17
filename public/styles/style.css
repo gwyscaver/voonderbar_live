@@ -180,6 +180,12 @@ section#contact {
   ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
     background-color: #fed136;
   }
+
+  #videoBG{
+    position: fixed;
+    z-index: -1;
+  }
+  
   /* SECTION IS FOR LOGIN PAGE */
   :root {
     --input-padding-x: 1.5rem;
