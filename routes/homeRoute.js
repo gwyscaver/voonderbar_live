@@ -38,4 +38,8 @@ module.exports = function(app) {
   }
   });
 
+  app.get("/checkage", function (req, res) {
+    res.render("gateway")
+  })
+
 }

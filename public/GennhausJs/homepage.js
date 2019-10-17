@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-$("button").click(function(){
+$(".cartbtn").click(function(){
  productId = $(this).attr("data-productid");
  console.log("ID", productId)
 
