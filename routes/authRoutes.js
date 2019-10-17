@@ -24,7 +24,7 @@ app.post('/signup',function(req,res){
         password:req.body.password
     }).then(function(newUser){
         console.log(newUser)
-        res.json(newUser);
+        res.redirect('/main');
     })
 })
 //login page
@@ -43,6 +43,7 @@ app.post('/login',function(req,res){
         else {
             req.session.user= false;
             req.session.error = 'auth failed bro'
+            res.redirect('/');
         }
         res.redirect('/main');
     })

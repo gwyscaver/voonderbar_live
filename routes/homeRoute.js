@@ -25,6 +25,7 @@ module.exports = function(app) {
               white: whiteWine,
               name:req.session.user.name
             };
+            
 
             
              res.render("securepage", hbsObject);
@@ -35,11 +36,19 @@ module.exports = function(app) {
       }) 
       // db.Wine.findAll()   
 
-  }
+      
+    }
   });
+<<<<<<< HEAD
 
   app.get("/checkage", function (req, res) {
     res.render("gateway")
   })
 
+=======
+  
+  app.get("/", function (req, res) {
+    res.render("gateway")
+  })
+>>>>>>> e1ae57c312a27f19c0d26c402df5744c940cf1a3
 }

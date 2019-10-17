@@ -47,6 +47,18 @@ require("./routes/authRoutes")(app);
 var cartRoutes = require("./routes/cartRoute");
 app.use("/cart", cartRoutes);
 
+var seeds = require('./db/seeds.js');
+
+app.get("/seeddb",function(req,res){
+  db.Cannabis.findAll().then(function(things){
+    if(!things.length){
+      seeds();
+      res.json('seeding complete!');
+    }
+    res.json('already seeded!')
+  })
+})
+
 // Syncing our sequelize models and then starting our Express app
 // =============================================================
 db.sequelize.sync({force: false}).then(function() {

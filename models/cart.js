@@ -9,6 +9,7 @@ module.exports = function(sequelize, DataTypes) {
         // add associations here
         Cart.belongsTo(models.User);
         Cart.belongsToMany(models.Cannabis,{through:"CartCannabis"});
+        Cart.belongsToMany(models.Wine,{through:"CartWine"});
         
     };
 

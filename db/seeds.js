@@ -3,7 +3,10 @@ var db = require("../models");
 
 //so for example If I wanted to create a new strain in the table Cannabis it would look like
 //-------------------------------------------------Indica Strains-----------------------------------------------------------------------
-db.Cannabis.create({
+
+
+module.exports = function(){
+    db.Cannabis.create({
 
     strainName: "Grand Daddy Purple",
     color: "Indica",
@@ -788,5 +791,6 @@ db.Wine.create({
     alcoholPercent: 15
 
 })
+}
 
 //-------------------------------END RED WINE---------------------//
