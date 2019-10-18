@@ -1,6 +1,6 @@
 # project2: VOONDERBAR!
 
-https://voonderbar.herokuapp.com/
+
 
 # Voonderbar!
 
@@ -17,6 +17,10 @@ npm install handlebars
 
 ## Link to Voonderbar app and app-Video Walkthrough
 
+App:
+https://voonderbar.herokuapp.com/
+
+App Walkthrough:
 https://drive.google.com/file/d/1v7yHcaWrXr32eKvcrq1IxIPtLD4dz27k/view
 
 ## Credits
