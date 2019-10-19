@@ -44,11 +44,11 @@
                                         <li class="hassubs">
                                             <a class="nav-link js-scroll-trigger" href="#products">Products</a>
                                             <ul>
-                                                <li><a class="js-scroll-trigger" href="#sativa">Sativa</a></li>
-                                                <li><a href="#indica">Indica</a></li>
-                                                <li><a href="#hybrid">Hybrids</a></li>
-                                                <li><a href="#white">White Wine</a></li>
-                                                <li><a href="#red">Red Wine</a></li>
+                                                <li><a href="#sativaProducts">Sativa</a></li>
+                                                <li><a href="#indicaProducts">Indica</a></li>
+                                                <li><a href="#hybridProducts">Hybrids</a></li>
+                                                <li><a href="#whiteProducts">White Wine</a></li>
+                                                <li><a href="#redProducts">Red Wine</a></li>
                                             </ul>
                                         </li>
 
@@ -303,7 +303,7 @@
 
         
 
-        <section class="bg-light page-section" id="products">
+        <section class="bg-light page-section" id="sativaProducts">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
@@ -322,11 +322,11 @@
 
                             <p> {{ desc }}</p>
 
-                            <p> {{ percentOfTHC }}</p>
+                            <p> THC {{ percentOfTHC }}% </p>
 
                             <div id="strain__pricerow">
                                 <div id="pricerowleft">
-                                    <p> {{ pricePerGram }}</p>
+                                    <p> ${{ pricePerGram }}.00 </p>
                                 </div>
                                 <div id="pricerowrightt">   
                                     <button class="cannabis" data-productid={{id}}>add to cart</button>
@@ -338,8 +338,12 @@
                 </div>
                 <br>
                 <br>
+            </div>
+        </section>
 
-                <div class="row">
+         <section class="bg-light page-section" id="indicaProducts">
+            <div class="container">
+                <div class="row indica">
                     <div class="col-lg-12 text-center">
                         <h2 id="indica" class="section-heading text-uppercase">cannabis indicas</h2>
                         <h3 class="section-subheading text muted">producing a body-high, great for relaxation or trying to sleep</h3>
@@ -355,11 +359,11 @@
 
                             <p> {{ desc }}</p>
 
-                            <p> {{ percentOfTHC }}</p>
+                              <p> THC {{ percentOfTHC }}% </p>
 
                             <div id="strain__pricerow">
                                 <div id="pricerowleft">
-                                    <p> {{ pricePerGram }}</p>
+                                    <p> ${{ pricePerGram }}.00 </p>
                                 </div>
                                 <div id="pricerowrightt">   
                                     <button class="cannabis" data-productid={{id}}>add to cart</button>
@@ -371,7 +375,11 @@
                 </div>
                 <br>
                 <br>
+            </div>
+        </section>
 
+        <section class="bg-light page-section" id="hybridProducts">
+            <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
                         <h2 id="hybrid" class="section-heading text-uppercase">cannabis hybrids</h2>
@@ -388,11 +396,11 @@
 
                             <p> {{ desc }}</p>
 
-                            <p> {{ percentOfTHC }}</p>
+                             <p> THC {{ percentOfTHC }}% </p>
 
                             <div id="strain__pricerow">
                                 <div id="pricerowleft">
-                                    <p> {{ pricePerGram }}</p>
+                                    <p> ${{ pricePerGram }}.00 </p>
                                 </div>
                                 <div id="pricerowrightt">   
                                     <button class="cannabis" data-productid={{id}}>add to cart</button>
@@ -404,7 +412,12 @@
                 </div>
                 <br>
                 <br>
+            </div>
+        </section>
 
+
+        <section class="bg-light page-section" id="whiteProducts">
+            <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
                         <h2 id="white" class="section-heading text-uppercase">wine - white</h2>
@@ -421,11 +434,11 @@
 
                             <p> {{ flavor }}</p>
 
-                            <p> {{ alcoholPercent }}</p>
+                            <p> ALC {{ alcoholPercent }}% by Vol.</p>
 
                             <div id="wine__pricerow">
                                 <div id="pricerowleft">
-                                    <p> {{ pricePerBottle }}</p>
+                                    <p> ${{ pricePerBottle }}.00</p>
                                 </div>
                                 <div id="pricerowrightt">   
                                     <button class="cartbtn" data-productid={{id}}>add to cart</button>
@@ -437,7 +450,11 @@
                 </div>
                 <br>
                 <br>
-
+            </div>
+        </section>
+        
+        <section class="bg-light page-section" id="redProducts">
+            <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
                         <h2 id="red" class="section-heading text-uppercase">wine - red</h2>
@@ -454,11 +471,11 @@
 
                             <p> {{ flavor }}</p>
 
-                            <p> {{ alcoholPercent }}</p>
+                            <p> ALC {{ alcoholPercent }}% by Vol.</p>
 
-                           <div id="wine__pricerow">
+                            <div id="wine__pricerow">
                                 <div id="pricerowleft">
-                                    <p> {{ pricePerBottle }}</p>
+                                    <p> ${{ pricePerBottle }}.00</p>
                                 </div>
                                 <div id="pricerowrightt">   
                                     <button class="cartbtn" data-productid={{id}}>add to cart</button>
