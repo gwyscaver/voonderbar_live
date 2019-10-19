@@ -46,6 +46,28 @@ a, a:hover {
   font-family: 'Poppins', sans-serif;
 }
 
+.footer {
+  margin-top: inherit;
+  text-align: center;
+  position: inherit;
+  padding-top: 10%;
+}
+
+.footer span.copyright {
+  font-size: 90%;
+  line-height: 40px;
+  text-transform: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer ul.quicklinks {
+  font-size: 90%;
+  line-height: 40px;
+  margin-bottom: 0;
+  text-transform: none;
+  font-family: 'Poppins', sans-serif;
+}
+
 .logo a {
   font-size: 30px;
   font-weight: 700;
@@ -67,13 +89,21 @@ a, a:hover {
   min-height: 100vh;
 }
 
-
 /* #products {
   background-color: rgba(0,0,0,.09)!important;
 } */
 
 #sativaProducts, #indicaProducts, #hybridProducts, #redProducts, #whiteProducts {
  padding: 5%;
+}
+
+#sativa, #indica, #hybrid, #white, #red  {
+  color: #966B3A;
+}
+
+#subSativa, #subIndica, #subHybrid, #subWhite, #subRed {
+  font-weight: 400 !important;
+  color: #d4b490 !important;
 }
   
 .strain, .wine {
@@ -88,58 +118,35 @@ a, a:hover {
   grid-template-columns: 3fr 1fr;
   position: absolute;
   bottom: 0;
-  
 }
 
+  
+ul.social-buttons {
+  margin-bottom: 0;
+}
 
-  .footer {
-    margin-top: inherit;
-    text-align: center;
-    position: inherit;
-    padding-top: 10%;
-  }
-  
-  .footer span.copyright {
-    font-size: 90%;
-    line-height: 40px;
-    text-transform: none;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  .footer ul.quicklinks {
-    font-size: 90%;
-    line-height: 40px;
-    margin-bottom: 0;
-    text-transform: none;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  ul.social-buttons {
-    margin-bottom: 0;
-  }
-  
-  ul.social-buttons li a {
-    font-size: 20px;
-    line-height: 50px;
-    display: block;
-    width: 50px;
-    height: 50px;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-    color: white;
-    border-radius: 100%;
-    outline: none;
-    background-color: #212529;
-  }
-  
-  ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
-    background-color: #fed136;
-  }
+ul.social-buttons li a {
+  font-size: 20px;
+  line-height: 50px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  color: white;
+  border-radius: 100%;
+  outline: none;
+  background-color: #212529;
+}
 
-  #videoBG{
-    position: fixed;
-    z-index: -1;
-  }
+ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
+  background-color: #fed136;
+}
+
+#videoBG{
+  position: fixed;
+  z-index: -1;
+}
   
   /* SECTION IS FOR LOGIN PAGE */
   :root {

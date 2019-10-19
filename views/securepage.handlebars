@@ -1,7 +1,3 @@
-
-
-
-
 <link rel="stylesheet" type="text/css" href="/styles/main_styles.css">
 <link rel="stylesheet" type="text/css" href="/styles/responsive.css">
 <link rel="stylesheet" type="text/css" href="/styles/style.css">
@@ -220,7 +216,8 @@
                                         <div class="home_slider_content" data-animation-in="fadeIn"
                                             data-animation-out="animate-out fadeOut">
                                             <div class="home_slider_title">A new Online Shop experience.</div>
-                                            <div class="home_slider_subtitle">Voonderbar is an online store dedicated to patrons who are looking for their next cannabis and wine purchase.</div>
+                                            <div class="home_slider_subtitle">Voonderbar is an online store dedicated to
+                                                patrons who are looking for their next cannabis and wine purchase.</div>
                                             <div class="button button_light home_button"><a href="#">Shop Now</a></div>
                                         </div>
                                     </div>
@@ -231,7 +228,8 @@
 
                     <!-- Slider Item -->
                     <div class="owl-item home_slider_item">
-                        <div class="home_slider_background" style="background-image:url(/images/MLL_CANNABIS-WINE-2A.jpg)">
+                        <div class="home_slider_background"
+                            style="background-image:url(/images/MLL_CANNABIS-WINE-2A.jpg)">
                         </div>
                         <div class="home_slider_content_container">
                             <div class="container">
@@ -240,7 +238,9 @@
                                         <div class="home_slider_content" data-animation-in="fadeIn"
                                             data-animation-out="animate-out fadeOut">
                                             <div class="home_slider_title">Discreet and accessible</div>
-                                            <div class="home_slider_subtitle">Voonderbar is designed to appeal to those new to the cannabis and wine culture and veterans who are looking for the next best strain and vine for their needs.  </div>
+                                            <div class="home_slider_subtitle">Voonderbar is designed to appeal to those
+                                                new to the cannabis and wine culture and veterans who are looking for
+                                                the next best strain and vine for their needs. </div>
                                             <div class="button button_light home_button"><a href="#">Shop Now</a></div>
                                         </div>
                                     </div>
@@ -261,7 +261,8 @@
                                             data-animation-out="animate-out fadeOut">
 
                                             <div class="home_slider_title">Become Inspired.</div>
-                                            <div class="home_slider_subtitle">and enjoy the smaller things in life.</div>
+                                            <div class="home_slider_subtitle">and enjoy the smaller things in life.
+                                            </div>
 
                                             <div class="button button_light home_button"><a href="#">Shop Now</a></div>
                                         </div>
@@ -301,17 +302,18 @@
 
         <!------------------------------------------------->
 
-        
+
 
         <section class="bg-light page-section" id="sativaProducts">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
                         <h2 id="sativa" class="section-heading text-uppercase">cannabis sativas</h2>
-                        <h3 class="section-subheading text muted">uplifting and cerebral, enhancing creativity and productivity</h3>
-                    </div> 
+                        <h3 id="subSativa" class="section-subheading text muted">uplifting and cerebral, enhancing creativity and
+                            productivity</h3>
+                    </div>
                     {{#each sativa}}
-               
+
                     <div class="col-lg-4">
                         <br>
                         <div class="strain">
@@ -328,7 +330,7 @@
                                 <div id="pricerowleft">
                                     <p> ${{ pricePerGram }}.00 </p>
                                 </div>
-                                <div id="pricerowrightt">   
+                                <div id="pricerowrightt">
                                     <button class="cannabis" data-productid={{id}}>add to cart</button>
                                 </div>
                             </div>
@@ -341,12 +343,13 @@
             </div>
         </section>
 
-         <section class="bg-light page-section" id="indicaProducts">
+        <section class="bg-light page-section" id="indicaProducts">
             <div class="container">
                 <div class="row indica">
                     <div class="col-lg-12 text-center">
                         <h2 id="indica" class="section-heading text-uppercase">cannabis indicas</h2>
-                        <h3 class="section-subheading text muted">producing a body-high, great for relaxation or trying to sleep</h3>
+                        <h3 id="subIndica" class="section-subheading text muted">producing a body-high, great for relaxation or trying
+                            to sleep</h3>
                     </div>
                     {{#each indica}}
                     <div class="col-lg-4">
@@ -359,13 +362,13 @@
 
                             <p> {{ desc }}</p>
 
-                              <p> THC {{ percentOfTHC }}% </p>
+                            <p> THC {{ percentOfTHC }}% </p>
 
                             <div id="strain__pricerow">
                                 <div id="pricerowleft">
                                     <p> ${{ pricePerGram }}.00 </p>
                                 </div>
-                                <div id="pricerowrightt">   
+                                <div id="pricerowrightt">
                                     <button class="cannabis" data-productid={{id}}>add to cart</button>
                                 </div>
                             </div>
@@ -383,7 +386,8 @@
                 <div class="row">
                     <div class="col-lg-12 text-center">
                         <h2 id="hybrid" class="section-heading text-uppercase">cannabis hybrids</h2>
-                        <h3 class="section-subheading text muted">somewhere in between, offering a balance of indica and sativa effects</h3>
+                        <h3 id="subHybrid" class="section-subheading text muted">somewhere in between, offering a balance of indica and
+                            sativa effects</h3>
                     </div>
                     {{#each hybrid}}
                     <div class="col-lg-4">
@@ -396,13 +400,13 @@
 
                             <p> {{ desc }}</p>
 
-                             <p> THC {{ percentOfTHC }}% </p>
+                            <p> THC {{ percentOfTHC }}% </p>
 
                             <div id="strain__pricerow">
                                 <div id="pricerowleft">
                                     <p> ${{ pricePerGram }}.00 </p>
                                 </div>
-                                <div id="pricerowrightt">   
+                                <div id="pricerowrightt">
                                     <button class="cannabis" data-productid={{id}}>add to cart</button>
                                 </div>
                             </div>
@@ -421,7 +425,7 @@
                 <div class="row">
                     <div class="col-lg-12 text-center">
                         <h2 id="white" class="section-heading text-uppercase">wine - white</h2>
-                        <h3 class="section-subheading text muted">lighter, crisp flavors, light</h3>
+                        <h3 id="subWhite" class="section-subheading text muted">lighter, crisp flavors, citrus &amp; tree fruits</h3>
                     </div>
                     {{#each white}}
                     <div class="col-lg-4">
@@ -440,7 +444,7 @@
                                 <div id="pricerowleft">
                                     <p> ${{ pricePerBottle }}.00</p>
                                 </div>
-                                <div id="pricerowrightt">   
+                                <div id="pricerowrightt">
                                     <button class="cartbtn" data-productid={{id}}>add to cart</button>
                                 </div>
                             </div>
@@ -452,13 +456,13 @@
                 <br>
             </div>
         </section>
-        
+
         <section class="bg-light page-section" id="redProducts">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
                         <h2 id="red" class="section-heading text-uppercase">wine - red</h2>
-                        <h3 class="section-subheading text muted">deeper, bolder flavors, dark fruits.</h3>
+                        <h3 id="subRed" class="section-subheading text muted">deeper, bolder flavors, dark fruits</h3>
                     </div>
                     {{#each red}}
                     <div class="col-lg-4">
@@ -477,7 +481,7 @@
                                 <div id="pricerowleft">
                                     <p> ${{ pricePerBottle }}.00</p>
                                 </div>
-                                <div id="pricerowrightt">   
+                                <div id="pricerowrightt">
                                     <button class="cartbtn" data-productid={{id}}>add to cart</button>
                                 </div>
                             </div>
@@ -493,10 +497,10 @@
 
 
 
-            {{!-- <div class="product_grid"> --}}
+        {{!-- <div class="product_grid"> --}}
 
-                <!-- Product -->
-                {{!-- <div class="product">
+        <!-- Product -->
+        {{!-- <div class="product">
                             <div class="product_image"><img src="images/product_5.jpg" alt=""></div>
                             <div class="product_content">
                                 <div class="product_title"><a href="product.html">Smart Phone</a></div>
@@ -573,8 +577,8 @@
                             </div>
                         </div> --}}
 
-                        <!-- Product -->
-                        {{!-- <div class="product">
+        <!-- Product -->
+        {{!-- <div class="product">
                             <div class="product_image"><img src="images/product_9.jpg" alt=""></div>
                             <div class="product_extra product_sale"><a href="categories.html">Hot</a></div>
                             <div class="product_content">
@@ -652,12 +656,12 @@
                                 <div class="product_price">$580</div>
                             </div>
                         </div> --}}
-                <!--------------------->
+        <!--------------------->
 
-            {{!-- </div> --}}
+        {{!-- </div> --}}
 
-            <!-----UNECESSARY SINCE WE ARE MAKING ONE PAGE---------->
-            <!-- <div class="product_pagination">
+        <!-----UNECESSARY SINCE WE ARE MAKING ONE PAGE---------->
+        <!-- <div class="product_pagination">
 					<ul>
 						<li class="active"><a href="#">01.</a></li>
 						<li><a href="#">02.</a></li>
@@ -666,7 +670,7 @@
 				</div> -->
 
 
-        </div>
+    </div>
     </div>
 
 
@@ -731,108 +735,111 @@
 
                 <!---------------------CONTACT------------------------->
 
-<!--Section: Contact v.2-->
-<section class="mb-4">
+                <!--Section: Contact v.2-->
+                <section class="mb-4">
 
-    <!--Section heading-->
-    <h2 id="contact" class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
-    <!--Section description-->
-    <p class="text-center mx-auto mb-5">Please do not hesitate to contact us directly. Our team will come back to you within
-        a matter of hours or days to help you, because we are either high or drunk.</p>
+                    <!--Section heading-->
+                    <h2 id="contact" class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+                    <!--Section description-->
+                    <p class="text-center mx-auto mb-5">Please do not hesitate to contact us directly. Our team will
+                        come back to you within
+                        a matter of hours or days to help you, because we are either high or drunk.</p>
 
-    <div class="row">
+                    <div class="row">
 
-        <!--Grid column-->
-        <div class="col-md-9 mb-md-0 mb-5">
-            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                        <!--Grid column-->
+                        <div class="col-md-9 mb-md-0 mb-5">
+                            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
 
-                <!--Grid row-->
-                <div class="row">
+                                <!--Grid row-->
+                                <div class="row">
 
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <input type="text" id="name" name="name" class="form-control">
-                            <label for="name" class="">Your name</label>
+                                    <!--Grid column-->
+                                    <div class="col-md-6">
+                                        <div class="md-form mb-0">
+                                            <input type="text" id="name" name="name" class="form-control">
+                                            <label for="name" class="">Your name</label>
+                                        </div>
+                                    </div>
+                                    <!--Grid column-->
+
+                                    <!--Grid column-->
+                                    <div class="col-md-6">
+                                        <div class="md-form mb-0">
+                                            <input type="text" id="email" name="email" class="form-control">
+                                            <label for="email" class="">Your email</label>
+                                        </div>
+                                    </div>
+                                    <!--Grid column-->
+
+                                </div>
+                                <!--Grid row-->
+
+                                <!--Grid row-->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="md-form mb-0">
+                                            <input type="text" id="subject" name="subject" class="form-control">
+                                            <label for="subject" class="">Subject</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Grid row-->
+
+                                <!--Grid row-->
+                                <div class="row">
+
+                                    <!--Grid column-->
+                                    <div class="col-md-12">
+
+                                        <div class="md-form">
+                                            <textarea type="text" id="message" name="message" rows="2"
+                                                class="form-control md-textarea"></textarea>
+                                            <label for="message">Your message</label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!--Grid row-->
+
+                            </form>
+
+                            <div class="text-center text-md-left">
+                                <a class="btn btn-dark"
+                                    onclick="document.getElementById('contact-form').submit();">Send</a>
+                            </div>
+                            <div class="status"></div>
                         </div>
-                    </div>
-                    <!--Grid column-->
+                        <!--Grid column-->
 
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <input type="text" id="email" name="email" class="form-control">
-                            <label for="email" class="">Your email</label>
+                        <!--Grid column-->
+                        <div class="col-md-3 text-center">
+                            <ul class="list-unstyled mb-0">
+                                <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                                    <p>Seattle, WA, USA</p>
+                                </li>
+
+                                <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                                    <p>+ 1 800 555 1212</p>
+                                </li>
+
+                                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                                    <p>contact@voonderbar.com</p>
+                                </li>
+                            </ul>
                         </div>
-                    </div>
-                    <!--Grid column-->
-
-                </div>
-                <!--Grid row-->
-
-                <!--Grid row-->
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="md-form mb-0">
-                            <input type="text" id="subject" name="subject" class="form-control">
-                            <label for="subject" class="">Subject</label>
-                        </div>
-                    </div>
-                </div>
-                <!--Grid row-->
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-12">
-
-                        <div class="md-form">
-                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                            <label for="message">Your message</label>
-                        </div>
+                        <!--Grid column-->
 
                     </div>
-                </div>
-                <!--Grid row-->
 
-            </form>
-
-            <div class="text-center text-md-left">
-                <a class="btn btn-dark" onclick="document.getElementById('contact-form').submit();">Send</a>
-            </div>
-            <div class="status"></div>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-md-3 text-center">
-            <ul class="list-unstyled mb-0">
-                <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                    <p>Seattle, WA, USA</p>
-                </li>
-
-                <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                    <p>+ 1 800 555 1212</p>
-                </li>
-
-                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                    <p>contact@voonderbar.com</p>
-                </li>
-            </ul>
-        </div>
-        <!--Grid column-->
-
-    </div>
-
-</section>
-<!--Section: Contact v.2-->
+                </section>
+                <!--Section: Contact v.2-->
 
 
 
 
 
-                 {{!-- <section class="page-section" id="contact">
+                {{!-- <section class="page-section" id="contact">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -882,7 +889,7 @@
   </section> --}}
 
 
-                            {{!-- <!-- Contact Info -->
+                {{!-- <!-- Contact Info -->
                             <div class="col-lg-3 offset-xl-1 contact_col">
                                 <div class="contact_info">
                                     <div class="contact_info_section">
@@ -908,12 +915,12 @@
                                     </div>
                                 </div>
                             </div> --}}
-                        {{!-- </div> --}}
-                        {{!-- <div class="row map_row">
+                {{!-- </div> --}}
+                {{!-- <div class="row map_row">
                             <div class="col"> --}}
 
-                                <!-- Google Map -->
-                                <!-- <div class="map">
+                <!-- Google Map -->
+                <!-- <div class="map">
 						<div id="google_map" class="google_map">
 							<div class="map_container">
 								<div id="map"></div>
@@ -921,38 +928,43 @@
 						</div>
 					</div> -->
 
-                            {{!-- </div>
+                {{!-- </div>
                         </div> --}}
-                    {{!-- </div>
+                {{!-- </div>
                 </div> --}}
 
                 <!----------------------------------------------------->
 
 
                 <!-- Footer -->
-  <div class="footer_overlay"></div>
-	<footer class="footer">
-		{{!-- <div class="footer_background" style="background-image:url(images/footer.jpg)"></div> --}}
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<div class="footer_content d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
-						<!-- <div class="footer_logo"><a href="#">Sublime.</a></div> -->
-						<div class="copyright ml-auto mr-auto"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
-						<div class="footer_social ml-lg-auto">
-							<ul>
-								{{!-- <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                <div class="footer_overlay"></div>
+                <footer class="footer">
+                    {{!-- <div class="footer_background" style="background-image:url(images/footer.jpg)"></div> --}}
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div
+                                    class="footer_content d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
+                                    <!-- <div class="footer_logo"><a href="#">Sublime.</a></div> -->
+                                    <div class="footer-copyright text-center py-3">
+                                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                        Copyright &copy;<script>
+                                            document.write(new Date().getFullYear());
+                                        </script> All rights reserved
+                                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                    </div>
+                                    <div class="footer_social ml-lg-auto">
+                                        <ul>
+                                            {{!-- <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
 								<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li> --}}
-								{{!-- <li><a href="https://www.facebook.com/beefyBois/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                            {{!-- <li><a href="https://www.facebook.com/beefyBois/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 								<li><a href="https://twitter.com/beefy_bois"><i class="fa fa-twitter" aria-hidden="true"></i></a></li> --}}
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
-</div>
-
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+</body>
